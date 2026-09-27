@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="google-site-verification" content="ioOUwdbCwVoyWMhPCd8xtVP4wMwQnCZ0_TWoN0ZAqps" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JANGGIRA - Wujudkan Generasi Tinggi Harapan</title>
+    
+    <!-- Google Fonts: Nunito for a friendly, rounded, and approachable typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        janggira: {
+                            yellow: '#FFD45A',
+                            orangeLight: '#F4B42E',
+                            orangeDark: '#F28C28',
+                            brownDark: '#5B3A1E',
+                            brownLight: '#8B5E34',
+                            greenLight: '#A8D08D',
+                            greenDark: '#2E5E2B',
+                            cream: '#FFF5E6',
+                            pinkish: '#E9D8DD',
+                            white: '#FFFFFF'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 25px -5px rgba(91, 58, 30, 0.1), 0 8px 10px -6px rgba(91, 58, 30, 0.1)',
+                        'floating': '0 20px 40px -10px rgba(242, 140, 40, 0.2)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for playful rounded elements */
+        body {
+            background-color: #FFF5E6;
+            color: #5B3A1E;
+        }
+        .blob-shape {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        @keyframes morph {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+        }
+        .btn-hover-bounce:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(242, 140, 40, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-janggira-yellow selection:text-janggira-brownDark flex flex-col min-h-screen overflow-x-hidden">
+
+    <header class="sticky top-0 z-50 bg-janggira-cream/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Logo Janggira" class="w-12 h-12 object-contain group-hover:-rotate-12 transition-transform duration-300 drop-shadow-sm">
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-2xl leading-none text-janggira-brownDark tracking-wide">JANGGIRA</span>
+                    <span class="text-[10px] font-bold text-janggira-orangeDark uppercase tracking-widest">Cegah Stunting</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-8 font-bold text-janggira-brownLight">
+                <a href="#beranda" class="hover:text-janggira-orangeDark transition-colors">Beranda</a>
+                <a href="#tentang" class="hover:text-janggira-orangeDark transition-colors">Tentang Kami</a>
+                <a href="#edukasi" class="hover:text-janggira-orangeDark transition-colors">Edukasi</a>
+                <a href="#artikel" class="hover:text-janggira-orangeDark transition-colors">Artikel</a>
+            </nav>
+
+            <!-- Call to Action -->
+            <a href="#bergabung" class="hidden md:block bg-janggira-orangeDark text-white px-6 py-2.5 rounded-full font-bold transition-all duration-300 btn-hover-bounce">
+                Mulai Belajar
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-janggira-brownDark text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="beranda" class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+            <!-- Decorative background elements -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-janggira-yellow/30 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-janggira-greenLight/20 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3"></div>
+
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                
+                <!-- Hero Text -->
+                <div class="flex-1 text-center lg:text-left z-10">
+                    <div class="inline-block bg-white px-4 py-1.5 rounded-full text-janggira-greenDark font-bold text-sm shadow-sm mb-6 border border-janggira-greenLight/30">
+                        <i class="fa-solid fa-star text-janggira-yellow mr-2"></i> Kampanye Kesehatan Keluarga
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-black text-janggira-brownDark leading-tight mb-6">
+                        Wujudkan Generasi <br>
+                        <span class="text-janggira-orangeDark relative inline-block">
+                            Tinggi Harapan
+                            <svg class="absolute w-full h-4 -bottom-1 left-0 text-janggira-yellow -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 15 100 5 L 100 10 L 0 10 Z" fill="currentColor"></path></svg>
+                        </span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-janggira-brownLight mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Jangkau Potensi, Tumbuh Sehat, Raih Masa Depan. Bersama JANGGIRA, mari pahami bahwa pencegahan stunting lebih dari sekadar nutrisi, melainkan juga pola asuh yang penuh cinta.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#edukasi" class="bg-janggira-greenDark text-white px-8 py-3.5 rounded-full font-bold text-lg shadow-floating transition-all duration-300 btn-hover-bounce flex items-center justify-center gap-2">
+                            Pelajari Sekarang <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#tentang" class="bg-white text-janggira-brownDark border-2 border-janggira-pinkish px-8 py-3.5 rounded-full font-bold text-lg transition-all duration-300 hover:border-janggira-orangeDark hover:bg-janggira-cream flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-play text-janggira-orangeLight"></i> Kenalan dengan Janggira
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image (Mascot Placeholder) -->
+                <div class="flex-1 relative flex justify-center w-full max-w-lg mx-auto mt-8 lg:mt-0">
+                    <!-- Blob Background -->
+                    <div class="absolute inset-0 bg-janggira-yellow/80 blob-shape transform rotate-12 scale-105 shadow-xl"></div>
+                    
+                    <!-- Mascot Container -->
+                    <div class="relative z-10 w-full aspect-square flex items-center justify-center p-2">
+                        <!-- Menggunakan maskot.png -->
+                        <img src="maskot.png" alt="Maskot Janggira" class="w-full h-full object-contain hover:scale-105 transition-transform duration-500 drop-shadow-2xl relative z-10 drop-shadow-[0_20px_20px_rgba(91,58,30,0.3)]">
+                    </div>
+                    
+                    <!-- Floating badges -->
+                    <div class="absolute top-10 -left-6 bg-white p-3 rounded-2xl shadow-lg border border-gray-100 animate-bounce z-20" style="animation-duration: 3s;">
+                        <span class="text-2xl">🥦</span>
+                    </div>
+                    <div class="absolute bottom-20 -right-4 bg-white p-3 rounded-2xl shadow-lg border border-gray-100 animate-bounce z-20" style="animation-duration: 2.5s;">
+                        <span class="text-2xl">💖</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang" class="py-20 bg-white relative">
+            <div class="container mx-auto px-6 relative z-10">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-black text-janggira-brownDark mb-6">Kenapa Harus JANGGIRA?</h2>
+                    <div class="w-24 h-1.5 bg-janggira-greenLight mx-auto rounded-full mb-8"></div>
+                    
+                    <!-- Empathetic Quote Box -->
+                    <div class="bg-janggira-cream p-8 rounded-3xl shadow-soft relative">
+                        <i class="fa-solid fa-quote-left absolute top-6 left-6 text-4xl text-janggira-orangeLight/30"></i>
+                        <p class="text-xl lg:text-2xl font-bold text-janggira-orangeDark relative z-10 italic">
+                            "Anak tidak hanya membutuhkan makanan untuk tumbuh, tetapi juga pengasuhan untuk berkembang."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-janggira-pinkish/30 p-8 rounded-[3rem] border-4 border-white shadow-sm">
+                        <h3 class="text-2xl font-black text-janggira-brownDark mb-4 flex items-center gap-3">
+                            <span class="w-12 h-12 bg-janggira-orangeDark text-white rounded-full flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </span>
+                            Latar Belakang
+                        </h3>
+                        <p class="text-janggira-brownLight text-lg leading-relaxed mb-4">
+                            Stunting merupakan masalah kesehatan yang menghambat pertumbuhan anak. Pencegahannya <strong>tidak hanya berkaitan dengan pemenuhan gizi</strong>, tetapi juga melibatkan pola asuh, stimulasi, perhatian, dan pemantauan.
+                        </p>
+                        <p class="text-janggira-brownLight text-lg leading-relaxed">
+                            Melalui JANGGIRA, kami menyampaikan edukasi pencegahan stunting dengan cara yang lebih menarik, mudah dipahami, hangat, dan dekat dengan keluarga tanpa menghakimi.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <h3 class="text-2xl font-black text-janggira-brownDark mb-2">Makna Nama Kami</h3>
+                        
+                        <!-- Name Meaning Card 1 -->
+                        <div class="flex gap-4 p-5 rounded-2xl bg-white border border-janggira-pinkish shadow-soft hover:border-janggira-yellow transition-colors">
+                            <div class="w-16 h-16 shrink-0 bg-janggira-yellow text-janggira-brownDark rounded-2xl flex items-center justify-center font-black text-2xl">
+                                JANG
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl text-janggira-orangeDark mb-1">Jangkau</h4>
+                                <p class="text-janggira-brownLight text-sm">Merepresentasikan harapan agar setiap anak mampu mencapai potensi tumbuh kembang optimal.</p>
+                            </div>
+                        </div>
+
+                        <!-- Name Meaning Card 2 -->
+                        <div class="flex gap-4 p-5 rounded-2xl bg-white border border-janggira-pinkish shadow-soft hover:border-janggira-greenLight transition-colors">
+                            <div class="w-16 h-16 shrink-0 bg-janggira-greenLight text-janggira-brownDark rounded-2xl flex items-center justify-center font-black text-2xl">
+                                GIRA
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl text-janggira-greenDark mb-1">Giraffe (Jerapah)</h4>
+                                <p class="text-janggira-brownLight text-sm">Simbol pertumbuhan dan harapan. Tinggi bukan hanya fisik, tapi tingginya cita-cita masa depan anak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edukasi" class="py-20 bg-janggira-greenDark relative overflow-hidden">
+            <!-- Wavy Top Divider -->
+            <div class="absolute top-0 left-0 w-full overflow-hidden leading-none z-10">
+                <svg class="relative block w-full h-12 md:h-20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-20 mt-10">
+                <div class="text-center mb-16">
+                    <span class="text-janggira-yellow font-black uppercase tracking-widest text-sm mb-2 block">Tujuan Janggira</span>
+                    <h2 class="text-3xl lg:text-4xl font-black text-white">5 Langkah Wujudkan Generasi Hebat</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Goal 1 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg transform transition duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-janggira-cream rounded-2xl flex items-center justify-center text-janggira-orangeDark text-2xl mb-6">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-janggira-brownDark mb-3">Tingkatkan Pengetahuan</h3>
+                        <p class="text-janggira-brownLight text-sm">Meningkatkan pemahaman keluarga mengenai apa itu stunting dan cara pencegahannya sejak dini.</p>
+                    </div>
+
+                    <!-- Goal 2 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg transform transition duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-janggira-cream rounded-2xl flex items-center justify-center text-janggira-greenDark text-2xl mb-6">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-janggira-brownDark mb-3">Kesadaran Pola Asuh</h3>
+                        <p class="text-janggira-brownLight text-sm">Membangun kesadaran bahwa pola asuh dan perhatian orang tua sangat krusial bagi tumbuh kembang anak.</p>
+                    </div>
+
+                    <!-- Goal 3 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg transform transition duration-300 hover:-translate-y-2">
+                        <div class="w-14 h-14 bg-janggira-cream rounded-2xl flex items-center justify-center text-janggira-yellow text-2xl mb-6">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-janggira-brownDark mb-3">Pengasuhan Responsif</h3>
+                        <p class="text-janggira-brownLight text-sm">Mendorong orang tua untuk memberikan pengasuhan yang responsif, penuh kasih sayang, dan perhatian utuh.</p>
+                    </div>
+
+                    <!-- Goal 4 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg transform transition duration-300 hover:-translate-y-2 lg:col-start-1 lg:ml-20">
+                        <div class="w-14 h-14 bg-janggira-cream rounded-2xl flex items-center justify-center text-janggira-orangeLight text-2xl mb-6">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-janggira-brownDark mb-3">Gizi & Stimulasi</h3>
+                        <p class="text-janggira-brownLight text-sm">Memastikan pemenuhan gizi seimbang, pemberian ASI eksklusif, stimulasi motorik, dan pemantauan rutin.</p>
+                    </div>
+
+                    <!-- Goal 5 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg transform transition duration-300 hover:-translate-y-2 lg:col-start-2 lg:-mr-20">
+                        <div class="w-14 h-14 bg-janggira-cream rounded-2xl flex items-center justify-center text-janggira-brownLight text-2xl mb-6">
+                            <i class="fa-solid fa-house-chimney-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-janggira-brownDark mb-3">Lingkungan Sehat</h3>
+                        <p class="text-janggira-brownLight text-sm">Membangun pemahaman bahwa pencegahan stunting butuh ekosistem keluarga yang sehat jasmani dan rohani.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wavy Bottom Divider -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 transform rotate-180">
+                <svg class="relative block w-full h-12 md:h-20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#FFF5E6"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section id="artikel" class="py-20 bg-janggira-cream">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-end mb-12">
+                    <div class="max-w-xl">
+                        <h2 class="text-3xl lg:text-4xl font-black text-janggira-brownDark mb-4">Ruang Literasi Janggira</h2>
+                        <p class="text-janggira-brownLight text-lg">Kumpulan artikel edukasi dari tim Janggira untuk membantu perjalanan Anda mengasuh si kecil.</p>
+                    </div>
+                    <a href="#" class="hidden md:inline-flex text-janggira-orangeDark font-bold hover:text-janggira-brownDark transition-colors items-center gap-2">
+                        Lihat Semua Artikel <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Article Card 1 (Salwa) -->
+                    <a href="https://www.kompasiana.com/salwaanf/6a95b0ebed641520eb431c62/anak-tumbuh-bukan-hanya-dari-apa-yang-dimakan" target="_blank" rel="noopener noreferrer" class="bg-white rounded-3xl overflow-hidden shadow-soft flex flex-col group cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                        <div class="h-48 bg-gray-200 relative overflow-hidden">
+                            <!-- Placeholder image replicating the Kompasiana thumbnail -->
+                            <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Keluarga bahagia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-janggira-greenDark">
+                                Pola Asuh
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-janggira-brownLight mb-3">
+                                <i class="fa-regular fa-calendar"></i> 31 Agustus 2026
+                                <span class="mx-1">•</span>
+                                <i class="fa-solid fa-pen-nib"></i> Salwa Annisa
+                            </div>
+                            <h3 class="text-xl font-bold text-janggira-brownDark mb-3 group-hover:text-janggira-orangeDark transition-colors line-clamp-2">
+                                Anak Tumbuh Bukan Hanya dari Apa yang Dimakan
+                            </h3>
+                            <p class="text-janggira-brownLight text-sm mb-6 line-clamp-3">
+                                Anak sudah makan cukup, tapi apakah sudah cukup diasuh? Ternyata, pola asuh orang tua juga punya peran penting dalam perjalanan tumbuh kembang anak...
+                            </p>
+                            <div class="mt-auto pt-4 border-t border-gray-100 font-bold text-janggira-orangeDark flex items-center justify-between">
+                                Baca Selengkapnya <i class="fa-solid fa-chevron-right text-sm"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article Card 2 (Bintang) -->
+                    <a href="https://www.kompasiana.com/bintangnurlaill3271/6a96190734777c1e45353025/sebelum-anak-bermimpi-pastikan-ia-tumbuh-dengan-baik" target="_blank" rel="noopener noreferrer" class="bg-white rounded-3xl overflow-hidden shadow-soft flex flex-col group cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                        <div class="h-48 bg-gray-200 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ibu menyuapi anak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-janggira-orangeDark">
+                                1000 HPK
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-janggira-brownLight mb-3">
+                                <i class="fa-regular fa-calendar"></i> 31 Agustus 2026
+                                <span class="mx-1">•</span>
+                                <i class="fa-solid fa-pen-nib"></i> Bintang Nurlail
+                            </div>
+                            <h3 class="text-xl font-bold text-janggira-brownDark mb-3 group-hover:text-janggira-orangeDark transition-colors line-clamp-2">
+                                1000 Hari yang Menentukan: Membangun Pertumbuhan Anak, Mencegah Stunting
+                            </h3>
+                            <p class="text-janggira-brownLight text-sm mb-6 line-clamp-3">
+                                Stunting bukan hanya tentang anak yang pendek. Di baliknya ada tumbuh kembang dan masa depan yang perlu diperjuangkan sejak dini...
+                            </p>
+                            <div class="mt-auto pt-4 border-t border-gray-100 font-bold text-janggira-orangeDark flex items-center justify-between">
+                                Baca Selengkapnya <i class="fa-solid fa-chevron-right text-sm"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article Card 3 (Ridho) -->
+                    <a href="https://www.kompasiana.com/ridhopangestu/6a9544bdc925c453c225d01d/remaja-putri-sehat-langkah-awal-menuju-generasi-bebas-stunting" target="_blank" rel="noopener noreferrer" class="bg-white rounded-3xl overflow-hidden shadow-soft flex flex-col group cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                        <div class="h-48 bg-janggira-yellow/30 relative overflow-hidden flex items-center justify-center p-4">
+                            <!-- Mascot illustration for thumbnail -->
+                            <img src="maskot.png" alt="Mascot Janggira Thumbnail" class="w-32 h-32 object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-janggira-pinkish">
+                                Remaja
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-janggira-brownLight mb-3">
+                                <i class="fa-regular fa-calendar"></i> 31 Agustus 2026
+                                <span class="mx-1">•</span>
+                                <i class="fa-solid fa-pen-nib"></i> Ridho Pangestu
+                            </div>
+                            <h3 class="text-xl font-bold text-janggira-brownDark mb-3 group-hover:text-janggira-orangeDark transition-colors line-clamp-2">
+                                Remaja Putri Sehat, Langkah Awal Menuju Generasi Bebas Stunting
+                            </h3>
+                            <p class="text-janggira-brownLight text-sm mb-6 line-clamp-3">
+                                Upaya pencegahan tidak hanya dilakukan setelah bayi lahir, melainkan dimulai sejak masa remaja untuk mempersiapkan calon ibu yang sehat...
+                            </p>
+                            <div class="mt-auto pt-4 border-t border-gray-100 font-bold text-janggira-orangeDark flex items-center justify-between">
+                                Baca Selengkapnya <i class="fa-solid fa-chevron-right text-sm"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                
+                <!-- Mobile Only Button -->
+                <div class="mt-8 text-center md:hidden">
+                    <a href="#" class="inline-block bg-janggira-orangeLight text-white px-8 py-3 rounded-full font-bold shadow-sm">
+                        Lihat Semua Artikel
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-janggira-brownDark text-white pt-16 pb-8 relative overflow-hidden">
+        <!-- Decorative shapes in footer -->
+        <div class="absolute top-0 right-10 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
+        <div class="absolute bottom-10 left-10 w-40 h-40 bg-janggira-greenLight/10 rounded-full blur-2xl"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-5">
+                    <a href="#" class="flex items-center gap-3 mb-6 inline-flex group">
+                        <img src="logo.png" alt="Logo Janggira Footer" class="w-14 h-14 object-contain bg-white rounded-2xl p-1.5 group-hover:-rotate-12 transition-transform duration-300">
+                        <div class="flex flex-col">
+                            <span class="font-extrabold text-3xl leading-none text-white tracking-wide">JANGGIRA</span>
+                            <span class="text-xs font-bold text-janggira-yellow uppercase tracking-widest">Tumbuh Sehat, Masa Depan Hebat</span>
+                        </div>
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-sm">
+                        Media edukasi pencegahan stunting pada balita. Kami hadir dengan pendekatan yang hangat, empatik, dan playful untuk mendampingi keluarga Indonesia.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://instagram.com/janggira.id" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-janggira-orangeDark transition-colors">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-janggira-orangeDark transition-colors">
+                            <i class="fa-brands fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-janggira-orangeDark transition-colors">
+                            <i class="fa-brands fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-bold text-janggira-yellow mb-4">Navigasi Cepat</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="#beranda" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Beranda</a></li>
+                        <li><a href="#tentang" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Tentang Janggira</a></li>
+                        <li><a href="#edukasi" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> 5 Langkah Pencegahan</a></li>
+                        <li><a href="#artikel" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Artikel & Literasi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Initiator / Credits with LinkedIn Links -->
+                <div class="md:col-span-4">
+                    <h4 class="text-lg font-bold text-janggira-yellow mb-4">Inisiator Program</h4>
+                    <p class="text-sm text-gray-300 mb-4">
+                        Dikembangkan sebagai media promosi kesehatan oleh Mahasiswa Promosi Kesehatan (Promkes).
+                    </p>
+                    <div class="bg-white/10 p-4 rounded-2xl border border-white/5">
+                        <p class="text-xs font-bold text-white mb-2">Disusun Oleh: Kelompok 10 3A</p>
+                        <ul class="text-xs text-gray-300 space-y-2">
+                            <li>
+                                • <a href="https://id.linkedin.com/in/bintang-nurlail-lisariyanto-51948a435" target="_blank" rel="noopener noreferrer" class="hover:text-janggira-yellow transition-colors inline-flex items-center gap-1.5 group">
+                                    Bintang Nurlail L (P17336124411) <i class="fa-brands fa-linkedin text-white group-hover:text-janggira-yellow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                • <a href="https://www.linkedin.com/in/latania-shofa-musholina-b48447312/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BAmpWxjo2SaCOyeS2zaeVYw%3D%3D" target="_blank" rel="noopener noreferrer" class="hover:text-janggira-yellow transition-colors inline-flex items-center gap-1.5 group">
+                                    Latania Shofa M (P17336124426) <i class="fa-brands fa-linkedin text-white group-hover:text-janggira-yellow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                • <a href="https://www.linkedin.com/in/raissa-nur-rahman-a3b20b299?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover:text-janggira-yellow transition-colors inline-flex items-center gap-1.5 group">
+                                    Raissa Nur Rahman (P17336124445) <i class="fa-brands fa-linkedin text-white group-hover:text-janggira-yellow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                • <a href="https://www.linkedin.com/in/ridho-pangestu-6296b5308/" target="_blank" rel="noopener noreferrer" class="hover:text-janggira-yellow transition-colors inline-flex items-center gap-1.5 group">
+                                    Ridho Pangestu (P17336124451) <i class="fa-brands fa-linkedin text-white group-hover:text-janggira-yellow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                • <a href="https://www.linkedin.com/in/salwa-annisa-nurfitria-7b7b25432?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover:text-janggira-yellow transition-colors inline-flex items-center gap-1.5 group">
+                                    Salwa Annisa Nurfitria (P17336124454) <i class="fa-brands fa-linkedin text-white group-hover:text-janggira-yellow"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4 font-semibold uppercase">
+                        Poltekkes Kemenkes Bandung
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+                <p>&copy; 2026 JANGGIRA - Kelompok 10 3A Poltekkes Bandung. All rights reserved.</p>
+                <p>Cegah Stunting, Wujudkan Generasi Tinggi Harapan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to handle smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
